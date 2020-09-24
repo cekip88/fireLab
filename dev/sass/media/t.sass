@@ -32,6 +32,7 @@ section
         display: none
       &:last-child
         display: block
+        margin-bottom: 0
       span
         display: flex
         align-items: center
@@ -48,3 +49,30 @@ section
         margin-bottom: 10px
         border: 3px solid $red
         border-radius: 100%
+
+.main-title
+  font-size: 36px
+  line-height: 48px
+  span
+    display: inline
+    margin-right: 15px
+
+.banner
+  padding-top: 174px
+  padding-bottom: 30px
+  background-size: cover
+  background-position: 55% 0
+  &-item,&-btn
+    font-size: 20px
+  &-row
+    flex-direction: row
+    align-items: center
+    margin-top: 30px
+  &-tel
+    background-color: transparent
+    text-align: center
+    padding: 0
+  &-btn
+    order: 0
+    padding: 9px 50px
+    margin: 0 0 0 30px

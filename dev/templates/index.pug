@@ -1,7 +1,28 @@
 extends template/main
 append vars
   -
-    page_title= 'Главная'
+    page_title = 'Главная'
 block content
     main
-        .section
+        .banner
+            section
+                h1.main-title
+                    span Лабораторные
+                    span пожарные
+                    span испытания
+                ul.banner-list
+                    li.banner-item
+                        include ../img/icons/red-mark.svg
+                        span.banner-item-text Огнеупорность
+                    li.banner-item
+                        include ../img/icons/red-mark.svg
+                        span.banner-item-text Изоляция
+                    li.banner-item
+                        include ../img/icons/red-mark.svg
+                        span.banner-item-text Прочность
+                .banner-row
+                    a(href='#').banner-btn
+                        span Подробнее
+                    a(href='tel:+71234566778').banner-tel
+                        span +7 (123) 456-67-78
+                        include ../img/icons/phone-solid.svg
