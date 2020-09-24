@@ -1,7 +1,7 @@
 import {Lib} from './Lib.js';
 import {Ctrl} from './Ctrl.js';
 import {MainEventBus} from './MainEventBus.lib.js';
-import { TweenMax,TimelineMax } from './gsap/GreenSock.lib.js'
+import { TweenMax } from './gsap/GreenSock.lib.js';
 
 class _Modaler extends Lib{
     constructor (){
@@ -131,7 +131,6 @@ class _Modaler extends Lib{
     // Главный метод который обрабатывает входящие данные и запускает нужные методы
     showModal(rawData){
         const _ = this;
-
         let modalParams = _.getModalParams(rawData);
 
         if(!_.innerDataCheck(modalParams)) return;
@@ -583,38 +582,4 @@ class _Modaler extends Lib{
 }
 
 export const Modaler = new _Modaler();
-
-let _Ctrl = new Ctrl(null,null,{
-    container:document.body
-});
-
-
-let btn = document.querySelector('#btn');
-btn.addEventListener('click',async function (e) {
-    let answer = await MainEventBus.trigger('Modaler','showConfirm',{
-        text:'Чё по чем?'
-    });
-    console.log(answer);
-});
-/*btn.addEventListener('click',async function(e) {
-    let answer = await Modaler.showConfirm();
-    console.log(answer);
-});*/
-
-/*document.querySelector('body').addEventListener('click',function(e){
-    //e.preventDefault();
-    let target = e.target;
-  /!*  while(!target.getAttribute('data-click-action')){
-        target = target.parentElement;
-    }*!/
-    if(target.hasAttribute('data-click-action')){
-        let rAction = target.getAttribute('data-click-action'),
-            rawAction = rAction.split(':'),
-            component = rawAction[0],
-            action = rawAction[1],
-            data = target.getAttribute('data-object');
-        //MainEventBus.trigger(`${component}`,`log`);
-        MainEventBus.trigger(`${component}`,`${action}`,{'item':target,'event':e, 'data': data ? data : ''})
-    }
-});*/
 

@@ -1,3 +1,50 @@
 $unit: 'px'
-.section
+section
   +w($tablet#{$unit})
+
+.head
+  box-shadow: 0 10px 0 rgba($black,.55)
+  section
+    padding: 10px 30px
+    height: auto
+  &-logo
+    height: 100px
+  &-mobile
+    &-btn
+      display: none
+    &-form
+      flex-direction: row
+      background-color: transparent
+      border: none
+      padding: 0
+      .head-logo
+        display: none
+      .head-callback
+        +w(auto)
+      &-row
+        width: auto
+    &-close
+      display: none
+  &-conts
+    display: block
+    &-row
+      &:first-child
+        display: none
+      &:last-child
+        display: block
+      span
+        display: flex
+        align-items: center
+        svg
+          margin-right: 10px
+  &-callback
+    display: none!important
+    &-tablet
+      +dfc
+      flex-direction: column
+      &-img
+        +dfc
+        +wh(62px)
+        margin-bottom: 10px
+        border: 3px solid $red
+        border-radius: 100%

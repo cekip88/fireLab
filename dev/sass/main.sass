@@ -1,8 +1,13 @@
 @import "../../../../core/mixins/reset"
 @import "../../../../core/mixins/mixins"
 @import "vars"
-$font_body: 14px
+$font_body: 16px
 +font_inc($f_reg,'roboto-regular.ttf')
++font_inc($f_black,'Roboto-Black.ttf')
++font_inc($f_bold,'Roboto-Bold.ttf')
++font_inc($f_medium,'Roboto-Medium.ttf')
++font_inc($f_light,'Roboto-Light.ttf')
++font_inc($f_thin,'Roboto-Thin.ttf')
 .set
 	+wh(100%)
 html,body
@@ -19,6 +24,9 @@ input,button
 input
 	background-color: transparent
 	border: none
+
+img
+	max-height: 100%
 
 $unit: 'px'
 

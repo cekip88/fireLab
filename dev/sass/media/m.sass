@@ -1,3 +1,101 @@
 $unit: 'px'
-.section
+section
   +w($mobile#{$unit})
+  margin: 0 auto
+
+.head
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  font-family: $f_bold
+  background-color: rgba(#222222,.7)
+  &,a,button
+    color: #fff
+  svg
+    fill: #fff
+  section
+    +wh(100%,50px)
+    padding: 0 30px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-logo
+    height: 40px
+  &-callback
+    +dfc
+    width: 300px
+    height: 30px
+    border-radius: 5px
+    background-color: $red
+    box-shadow: 0 0 10px rgba($red,.25)
+    &-tablet
+      display: none
+  &-mobile
+    &-btn
+      +dfc
+      padding: 4px 11px
+      border-radius: 5px
+      background-color: $red
+      box-shadow: 0 0 10px rgba($red,.25)
+      color: #fff
+      span
+        margin-right: 14px
+      svg
+        fill: #fff
+        height: 15px
+    &-form
+      padding: 20px 30px
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: #262626
+      border-bottom: 2px dashed $red
+      position: relative
+      &-row
+        +w(300px)
+        display: flex
+        align-items: center
+        justify-content: space-between
+      &,a,button
+        color: #fff
+      a
+        display: block
+      svg
+        fill: #fff
+        width: 15px
+      .head-logo
+        flex: 0 0 60px
+        height: 60px
+    &-close
+      +wh(30px)
+      +dfc
+      padding: 3px
+      border: 2px solid #fff
+      border-radius: 100%
+      position: absolute
+      top: 10px
+      right: 10px
+      opacity: .5
+      &:before,&:after
+        +wh(20px,2px)
+        content: ''
+        display: table
+        position: absolute
+        background-color: #fff
+      &:before
+        transform: rotate(45deg)
+      &:after
+        transform: rotate(135deg)
+  &-conts
+    display: none
+    &-row
+      &,a
+        margin-bottom: 14px
+      a
+        display: flex
+        align-items: center
+        svg
+          margin-right: 10px
+      &:last-child
+        display: none

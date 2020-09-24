@@ -1,3 +1,16 @@
 $unit: 'px'
-.section
+section
   +w($tablet-large#{$unit})
+
+.head
+  &-conts
+    &-row,&-row:last-child
+      display: flex
+      align-items: center
+      a
+        margin-bottom: 0
+        margin-right: 20px
+  &-mobile
+    &-form
+      svg
+        width: 25px

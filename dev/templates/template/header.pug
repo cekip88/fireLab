@@ -1,2 +1,37 @@
-header
-	section
+header.head
+    section
+        a(href='#').head-logo
+            +img('../../img/Logo.png')
+        button.head-mobile-btn('data-click-action'='Modaler:showModal' data-object='{"content":".head-mobile-form","closeBtn":false,"width":"100%","top":"0","bgc":false,"animation":"opacity-scale"}')
+            span Контакты
+            include ../../img/icons/phone-solid.svg
+        .head-conts
+            .head-mobile-form
+                .head-mobile-form-row
+                    ul
+                        li.head-conts-row
+                            span Пожарная лаборатория
+                        li.head-conts-row
+                            a(href='tel:+71234566778').head-phone-link
+                                include ../../img/icons/phone-solid.svg
+                                span +7-123-456-67-78
+                            a(href='https://wa.me/<+71234566778>').head-phone-link
+                                include ../../img/icons/whatsapp.svg
+                                span +7-123-456-67-78
+                        li.head-conts-row
+                            a(href='mailto:office_prombeztehno@mail.ru').head-mail-link
+                                include ../../img/icons/send.svg
+                                span office_prombeztehno@mail.ru
+                            span.head-time
+                                include ../../img/icons/clock.svg
+                                span Пн-пт 9:00-18:00, сб-вс выходной
+                    a(href='#').head-logo
+                        +img('../../img/Logo.png')
+                    button.head-mobile-close(data-click-action='Modaler:closeModal')
+                a(href='#').head-callback
+                    span Заказать обратный звонок
+        a(href='#').head-callback-tablet
+            .head-callback-tablet-img
+                +img('../../img/send.png')
+            span Обратная связь
+
