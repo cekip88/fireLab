@@ -129,6 +129,7 @@ section
   &-row
     display: flex
     flex-direction: column
+    align-items: center
   &-btn
     order: 2
     background-color: $red
@@ -144,7 +145,89 @@ section
     font-family: $f_bold
     font-size: 31px
     padding: 12px 0 7px 30px
-    background-color: rgba(#fff,.5)
+    background-color: rgba(#fff,.75)
     svg
       width: 22px
       fill: #e83432
+
+.calltoaction
+  section
+    padding: 20px 0 12px
+  &-text
+    +w(90%)
+    margin: 0 auto
+    text-align: center
+    line-height: 24px
+    strong
+      font-weight: 700
+
+.border
+  width: calc(100% - 20px)
+  margin: 0 auto
+  &:before,&:after
+    background: url('../../img/stripe.png') no-repeat
+    background-size: 100%
+    display: table
+    content: ''
+    height: 2px
+    width: 100%
+
+.services
+  padding: 30px
+  line-height: 1.4
+  &-title
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    svg
+      width: 30px
+      margin-right: 10px
+    span
+      width: calc(100% - 40px)
+  &-block
+    margin-bottom: 30px
+  &-item
+    +wh(100%,206px)
+    border-radius: 10px
+    overflow: hidden
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    box-shadow: 0 0 10px rgba($black,.5)
+    margin-bottom: 10px
+    &:hover
+      .services-item-cont
+        transform: translateY(0)
+    &-first
+      background-image: url('../../img/wires-safety.jpg')
+    &-second
+      background-image: url('../../img/smoke-safety.jpg')
+    &-third
+      background-image: url('../../img/gidrant.jpg')
+    &-forth
+      background-image: url('../../img/steel-construction.jpg')
+    &-fifth
+      background-image: url('../../img/wood-building.jpg')
+    &-sixth
+      background-image: url('../../img/cloth-safety.jpg')
+    &-seventh
+      background-image: url('../../img/roofing-safety.jpg')
+    &-eigth
+      background-image: url('../../img/stairs-safety.jpg')
+    &-cont
+      +wh(100%)
+      background-color: rgba($red,.5)
+      transition: .35s ease
+      transform: translateY(100%)
+      +dfc
+    &-fill
+      +wh(calc(100% - 20px))
+      +dfc
+      text-align: center
+      flex-direction: column
+      font-family: $f_medium
+      color: #fff
+      border-radius: 10px
+      background-color: rgba($red,.65)
+      span
+        display: block
