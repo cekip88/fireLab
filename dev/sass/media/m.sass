@@ -173,8 +173,11 @@ section
     width: 100%
 
 .services
-  padding: 30px
   line-height: 1.4
+  background: url('../../img/extingushers.png') 280px 560px no-repeat, url('../../img/extingushers.png') -280px 1280px no-repeat
+  background-size: auto 418px
+  section
+    padding: 30px
   &-title
     display: flex
     align-items: center
@@ -231,3 +234,48 @@ section
       background-color: rgba($red,.65)
       span
         display: block
+
+.lab
+  margin: 30px 0
+  position: relative
+  padding: 22px 0 40px
+  background-image: url('../../img/fire-test.jpg')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  text-align: center
+  overflow: hidden
+  &,&-link
+    color: #fff
+  &-text strong
+    color: $red
+    font-family: $f_medium
+  &-text,&-text-big
+    span,strong
+      margin-bottom: 5px
+      display: block
+  &-text,&-text-big
+    margin-bottom: 30px
+  &-text-big
+    margin-top: 30px
+  &-btn,&-link
+    font-size: 14px
+    padding: 4px 7px
+    border-radius: 5px
+  &-btn
+    background-color: $body
+    font-family: $f_medium
+  &-link
+    background-color: $red
+    box-shadow: 0 0 15px $red
+    font-family: $f_bold
+  &-img
+    position: absolute
+    height: 144px
+    &-first
+      transform: rotate(30deg)
+      left: -25px
+      bottom: 40px
+    &-last
+      right: -30px
+      bottom: 20px
