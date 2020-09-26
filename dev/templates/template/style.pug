@@ -4,8 +4,6 @@ head
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     title #{site_name} - #{page_title}
     +inc('css','css/main.css')
-    - if(fancy)
-        +inc('css','css/jquery.fancybox.css')
     - if(slick)
         +inc('css','css/slick.css')
         +inc('css','css/slick-theme.css')

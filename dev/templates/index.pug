@@ -113,7 +113,8 @@ block content
                         span проводится в целях
                         span контроля за соблюдением
                     p
-                        strong Правил Пожарной Безопасности
+                        a(href='#')
+                            strong Правил Пожарной Безопасности
                         span согласно действующему законодательству
                 a(href='#').lab-btn Общие требования пожарной безопасности
                 .lab-text-big
@@ -126,4 +127,53 @@ block content
                 a(href='#').lab-link Связаться с лабораторией
                 +img('extingusher.png').lab-img.lab-img-first
                 +img('extingusher.png').lab-img.lab-img-last
+        .calltoaction.border
+            section
+                p.calltoaction-text
+                    span Мы являемся сертфицированной и аккредитованной лабораторией.
+                    span Доверьте испытания профессионалам.
+        .attestat
+            section
+                .attestat-row
+                    button.attestat-btn("data-click-action"="Modaler:showModal" "data-object"={"content":".att-1","append":false,"max-width":"90%","animation":"opacity-scale"})
+                        img(src='../../img/att-1.jpg').att-1
+                    button.attestat-btn("data-click-action"="Modaler:showModal" "data-object"={"content":".att-2","append":false,"max-width":"90%","animation":"opacity-scale"})
+                        +img('../../img/att-2.jpg').att-2
+                    button.attestat-btn("data-click-action"="Modaler:showModal" "data-object"={"content":".att-3","append":false,"max-width":"90%","animation":"opacity-scale"})
+                        +img('../../img/att-3.jpg').att-3
+                    +img('../../img/magnific-glass.png').attestat-glass
+        .shop
+            .calltoaction.border
+                section
+                    p.calltoaction-text
+                        span Также у нас есть магазин и мы предоставляем
+                        span все необходимые товары по пожарной безопасности.
+            section
+                p.shop-text.calltoaction-text
+                    span Щиты, пожарный инвентарь, огнетушители и многое другое
+                a(href='#').lab-link Открыть магазин
+                +img('../../img/fire-axe.png').shop-img.shop-img-first
+                +img('../../img/fire-shield.png').shop-img.shop-img-last
+        .calltoaction.border
+            section
+                p.calltoaction-text
+                    span Наши клиенты
+        .asks
+            section
+                button.asks-arrow.asks-arrow-left
+                    +img('../../img/arrow.png')
+                .asks-slider
+                    .asks-slide
+                        +img('../../img/kegoc.png')
+                    .asks-slide
+                        +img('../../img/EmcAgro.png')
+                    .asks-slide
+                        +img('../../img/subaru.png')
+                    .asks-slide
+                        +img('../../img/UniversityServiceManagement.png')
+                    .asks-slide
+                        +img('../../img/BioOperations.png')
+                button.asks-arrow.asks-arrow-left
+                    +img('../../img/arrow.png')
+
 
