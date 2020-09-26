@@ -1,3 +1,39 @@
-footer
+footer.foot
+    section
+        p.foot-ask Нужны лабораторные испытания пожарной безопасности?
+        .foot-row
+            .foot-map
+                div(style="position:relative;overflow:hidden;")
+                    a(href="https://yandex.kz/maps/20809/kokshetau/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;") Кокшетау
+                    a(href="https://yandex.kz/maps/20809/kokshetau/house/YkAYcgRhTEMGQFtpfX52c31kZQ==/?ll=69.431561%2C53.272171&utm_medium=mapframe&utm_source=maps&z=17.15" style="color:#eee;font-size:12px;position:absolute;top:14px;") Микрорайон Юбилейный, 2А — Яндекс.Карты
+                    iframe(src="https://yandex.kz/map-widget/v1/-/CCQ3mAbWCB" frameborder="1" allowfullscreen="true" style="position:relative;")
+                ul.foot-conts
+                    li.foot-conts-item
+                        include ../../img/icons/location.svg
+                        span Мы находимся по адресу Юбилейный 2А
+                    li.foot-conts-item
+                        a(href='https://wa.me/<+71234566778>')
+                            include ../../img/icons/whatsapp.svg
+                            span +7-123-456-67-78
+                    li.foot-conts-item
+                        a(href='tel:+71234566778')
+                            include ../../img/icons/phone-solid.svg
+                            span +7-123-456-67-78
+            form.foot-form
+                h3.foot-form-title Оставить заявку
+                .foot-form-input
+                    input(type='text' placeholder='Введите ваше имя')
+                    include ../../img/icons/avatar.svg
+                .foot-form-input
+                    input(type='phone' placeholder='Введите номер телефона')
+                    include ../../img/icons/telephone.svg
+                .foot-form-input
+                    input(type='mail' placeholder='Введите почтовый адрес')
+                    include ../../img/icons/email.svg
+                .foot-form-input
+                    textarea(placeholder='Сообщение')
+                    include ../../img/icons/email.svg
+                button.foot-form-button.lab-link Отправить
+
     +inc('js','js/front.js',true)(type='module')
     +inc('js','https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',true)

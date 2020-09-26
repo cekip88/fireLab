@@ -319,3 +319,140 @@ section
       width: 98px
       bottom: -13px
       right: -37px
+
+.client
+  margin: 13px 0
+  &-slider
+    width: calc(100% - 60px)
+    overflow: hidden
+    &-cont
+      background-color: #fff
+      box-shadow: 0 0 5px rgba($black,.5)
+      section
+        padding: 10px 15px
+  &-slider,section
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-slide
+    flex: 0 0 30%
+    margin-right: 5%
+    img
+      width: 100%
+  &-arrow
+    padding: 5px
+    span
+      display: block
+      border-top: 1px solid $red
+      border-right: 1px solid $red
+      height: 8px
+      width: 8px
+    &-left
+      transform: rotate(-135deg)
+    &-right
+      transform: rotate(45deg)
+  &-info
+    +w(84%)
+    margin: 18px auto 27px
+    font-family: $f_italic
+    font-size: 10px
+    line-height: 16px
+    text-align: center
+    span:first-child
+      margin-right: 3px
+
+
+
+.foot
+  background-image: url(../../img/footer.jpg)
+  padding-top: 24px
+  padding-bottom: 208px
+  position: relative
+  &,a
+    color: #fff
+  &-ask
+    width: 280px
+    margin: 0 auto
+    font-family: $f_bold
+    text-align: center
+    &:after
+      content: ''
+      display: block
+      width: 200px
+      height: 1px
+      background-color: #fff
+      margin: 16px auto 0
+  &-row
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-map
+    order: 2
+    display: flex
+    flex-direction: column
+    align-items: center
+    div
+      order: 2
+      width: 100%
+      position: absolute!important
+      bottom: -4px
+      iframe
+        width: 100%
+        height: 186px
+  &-form
+    padding-top: 20px
+    &-title
+      font-size: 22px
+      text-align: center
+    &-input
+      margin-top: 20px
+      position: relative
+      display: flex
+      align-items: center
+      font-size: 11px
+      &:before
+        display: table
+        content: ''
+        width: 1px
+        height: 15px
+        left: 31px
+        position: absolute
+        background-color: #bdbdbd
+      input,textarea
+        +wh(285px,28px)
+        background-color: #fff
+        border-radius: 5px
+        padding-left: 39px
+        padding-right: 5px
+        &::placeholder
+          font-size: 11px
+      textarea
+        padding-top: 4px
+        height: 116px
+        &::placeholder
+          padding-top: 4px
+      svg
+        max-width: 17px
+        max-height: 16px
+        fill: #bdbdbd
+        position: absolute
+        left: 6px
+      &:nth-child(5)
+        &:before,svg
+          top: 7px
+    &-button
+      width: 100%
+      margin-top: 13px
+  &-conts
+    font-size: 14px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 304px
+    &-item
+      margin-top: 13px
+      svg
+        width: 20px
+        fill: #fff
+        margin-right: 10px
