@@ -135,3 +135,57 @@ section
     margin-top: 38px
     margin-bottom: 68px
 
+
+
+.foot
+  padding-top: 72px
+  padding-bottom: 72px
+  &-ask
+    width: 100%
+    font-size: 45px
+    &:after
+      width: 770px
+      margin-top: 35px
+  &-row
+    margin-top: 43px
+  &-form
+    &-title
+      font-size: 30px
+    &-input
+      margin-top: 30px
+      &:before
+        height: 22px
+        width: 2px
+        left: 42px
+      input,textarea
+        +wh(428px,42px)
+        padding-left: 54px
+        &,&::placeholder
+          font-size: 16px
+      textarea
+        height: 175px
+        padding-top: 11px
+        &::placeholder
+          padding-top: 0
+      svg
+        max-width: 22px
+        max-height: 27px
+        margin-bottom: 5px
+      &:nth-child(5)
+        svg,&::before
+          top: 11px
+    &-button
+      padding: 11px 0
+  &-map
+    width: calc(100% - 452px)
+    div
+      iframe
+        height: 449px
+  &-conts
+    &-item
+      font-size: 18px
+      margin-top: 22px
+      svg
+        width: 25px
+    &:after
+      margin-top: 14px
