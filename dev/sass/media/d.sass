@@ -135,7 +135,29 @@ section
     margin-top: 38px
     margin-bottom: 68px
 
-
+.asks
+  padding-bottom: 73px
+  section
+    width: 1100px
+  &-block,&-item-text,&-label>span
+    line-height: 23px
+  &-block
+    font-size: 18px
+    padding-top: 52px
+    &-title
+      font-size: 25px
+      line-height: 35px
+      margin-bottom: 40px
+  &-label
+    padding: 16px 18px
+    &-icon
+      +wh(20px)
+      flex: 0 0 20px
+  &-item
+    &-text
+      padding: 0 23px
+    input:checked~.asks-item-text
+      padding: 28px 23px 23px
 
 .foot
   padding-top: 72px

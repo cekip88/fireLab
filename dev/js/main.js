@@ -1,4 +1,4 @@
-$('.asks-slider').slick({
+/*$('.asks-slider').slick({
     dots: false,
     infinite: true,
     speed: 300,
@@ -19,4 +19,5 @@ $('.asks-slider').slick({
             }
         }
     ]
-});
+});*/
+
