@@ -133,6 +133,8 @@ class _Modaler extends Lib{
         const _ = this;
         let modalParams = _.getModalParams(rawData);
 
+        console.log(rawData);
+
         if(!_.innerDataCheck(modalParams)) return;
         _.defineType(modalParams);
 

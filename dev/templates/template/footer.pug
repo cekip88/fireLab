@@ -12,7 +12,7 @@ footer.foot
                         include ../../img/icons/location.svg
                         span Мы находимся по адресу Юбилейный 2А
                     li.foot-conts-item
-                        a(href='https://wa.me/<+77084250501>')
+                        a(href='https://wa.me/+77084250501')
                             include ../../img/icons/whatsapp.svg
                             span +7-708-425-05-01
                     li.foot-conts-item
@@ -33,8 +33,11 @@ footer.foot
                 .foot-form-input
                     textarea(placeholder='Сообщение')
                     include ../../img/icons/email.svg
-                button.foot-form-button.lab-link Отправить
-
+                button(data-click-action='Modaler:showModal' data-object='{"content":".overlay","animation":"opacity-scale"}').foot-form-button.lab-link Отправить
+            .overlay-cont(style='display:none')
+                .overlay
+                    span Отравлено.
+                    span Менеджер свяжется с Вами в ближайшее время.
     +inc('js','js/front.js',true)(type='module')
     +inc('js','js/jquery-3.3.1.min.js',false)
     +inc('js','js/slick.js',false)

@@ -53,6 +53,7 @@ for (let i = 1; i < 4; i++){
     gsap.timeline({scrollTrigger: `.services-${i}`}).from(`.services-${i}`, .5, {x:-50,opacity:0}, .5);
 }
 gsap.timeline({scrollTrigger: `.foot-ask`}).from(`.foot-ask`, .5, {x:-50,opacity:0}, .5);
+gsap.timeline({scrollTrigger: `.head`}).from(`.head-logo`, .5, {x:-50,opacity:0}, .5);
 gsap.timeline({scrollTrigger: `.banner-list`}).staggerFrom(`.banner-q`, .5, {x:-50,opacity:0}, .5);
 gsap.timeline({scrollTrigger: `.head`}).staggerFrom(`.head-q`, .5, {x:-50,opacity:0}, .5);
 gsap.timeline({scrollTrigger: `.c-1`}).staggerFrom(`.c-1c`, .5, {y:-15,opacity:0}, .5);
