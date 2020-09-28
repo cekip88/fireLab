@@ -36,7 +36,7 @@ block content
         .services
             section
                 .services-block
-                    h3.services-title
+                    h3.services-title.services-1
                         include ../img/icons/hydrant.svg
                         span Замеры электропроводки на сопротивление
                     ul.services-list
@@ -61,7 +61,7 @@ block content
                                     | водоснабжения
                                     | на работоспособность
                 .services-block
-                    h3.services-title
+                    h3.services-title.services-2
                         include ../img/icons/fire.svg
                         span Определение качества огнезащитной обработки деревянных, металлических конструкций и тканей
                     ul.services-list
@@ -84,7 +84,7 @@ block content
                                     | огнезащитной обработки
                                     | текстильного материала
                 .services-block
-                    h3.services-title
+                    h3.services-title.services-3
                         include ../img/icons/shield.svg
                         span Определение прочности лестниц и ограждений кровли
                     ul.services-list
@@ -115,7 +115,7 @@ block content
                         span контроля за соблюдением
                     p
                         a(href='http://adilet.zan.kz/rus/docs/P1400001077')
-                            strong Правил Пожарной Безопасности
+                            strong Правил Пожарной Безопасности&nbsp;
                         span согласно действующему законодательству
                 a(href='http://adilet.zan.kz/rus/docs/P1400001077').lab-btn Общие требования пожарной безопасности
                 .lab-text-big
@@ -151,7 +151,7 @@ block content
                         span.c-4c все необходимые товары по пожарной безопасности.
             section
                 p.shop-text.calltoaction-text
-                    span Щиты, пожарный инвентарь, огнетушители и многое другое
+                    span.c-4c Щиты, пожарный инвентарь, огнетушители и многое другое
                 a(href='http://pbt.kz' target='_blank').lab-link Открыть магазин
                 +img('../../img/fire-axe.png').shop-img.shop-img-first
                 +img('../../img/fire-shield.png').shop-img.shop-img-last
@@ -167,19 +167,40 @@ block content
                         .client-slider
                             .client-slide
                                 div
-                                    +img('../../img/kegoc.png')
+                                    +img('../../img/AkBiday.png')
+                            .client-slide
+                                div
+                                    +img('../../img/AsticKoymalari.png')
+                            .client-slide
+                                div
+                                    +img('../../img/BioOperations.png')
                             .client-slide
                                 div
                                     +img('../../img/EmcAgro.png')
+                            .client-slide
+                                div
+                                    +img('../../img/KamazEngineering.png')
+                            .client-slide
+                                div
+                                    +img('../../img/KazakAltinTechnology.png')
+                            .client-slide
+                                div
+                                    +img('../../img/KazakstanTemirZholi.png')
+                            .client-slide
+                                div
+                                    +img('../../img/Kazaktelecom.png')
+                            .client-slide
+                                div
+                                    +img('../../img/kegoc.png')
+                            .client-slide
+                                div
+                                    +img('../../img/NatureProduct.png')
                             .client-slide
                                 div
                                     +img('../../img/subaru.png')
                             .client-slide
                                 div
                                     +img('../../img/UniversityServiceManagement.png')
-                            .client-slide
-                                div
-                                    +img('../../img/BioOperations.png')
                     button.client-arrow.client-arrow-right.slick-prev.slick-arrow
             p.client-info
                 span А также многие другие, компании не имеющие представительств в интернете, дошкольные и школьные образовательные учреждения,
@@ -192,7 +213,7 @@ block content
             section
                 .asks-block
                     h5.asks-block-title Определение качества огнезащитной обработки деревянных и стальных конструкций
-                    ul.asks-list
+                    ul.asks-list.asks-list-1
                         li.asks-item
                             input(type='radio' name='ask' checked)#ask-1
                             label(for='ask-1').asks-label
@@ -219,7 +240,7 @@ block content
                             p.asks-item-text П.2-31 Постановление Правительства Республики Казахстан от 9 октября 2014 года № 1077 «Об утверждении Правил пожарной безопасности»
                 .asks-block
                     h5.asks-block-title Определение прочности стационарной наружной маршевой и вертикальной пожарной лестницы, без ограждения, с ограждением свыше 6 м.
-                    ul.asks-list
+                    ul.asks-list.asks-list-2
                         li.asks-item
                             input(type='radio' name='ask')#ask-4
                             label(for='ask-4').asks-label
@@ -246,7 +267,7 @@ block content
                             p.asks-item-text П.2-34 Постановление Правительства Республики Казахстан от 9 октября 2014 года № 1077 «Об утверждении Правил пожарной безопасности»
                 .asks-block
                     h5.asks-block-title Замер электропроводки на сопротивление изоляции
-                    ul.asks-list
+                    ul.asks-list.asks-list-3
                         li.asks-item
                             input(type='radio' name='ask')#ask-7
                             label(for='ask-7').asks-label
@@ -273,7 +294,7 @@ block content
                             p.asks-item-text П.6-5 Постановление Правительства Республики Казахстан от 9 октября 2014 года № 1077 «Об утверждении Правил пожарной безопасности»
                 .asks-block
                     h5.asks-block-title Испытания наружного и внутреннего противопожарного водоснабжения на работоспособность (водоотдачу) посредством пуска воды, а также состоянии установок пожаротушения и пожарной сигнализации
-                    ul.asks-list
+                    ul.asks-list.asks-list-4
                         li.asks-item
                             input(type='radio' name='ask')#ask-10
                             label(for='ask-10').asks-label
@@ -300,7 +321,7 @@ block content
                             p.asks-item-text П.2-34 Постановление Правительства Республики Казахстан от 9 октября 2014 года № 1077 «Об утверждении Правил пожарной безопасности»
                 .asks-block
                     h5.asks-block-title Общие вопросы
-                    ul.asks-list
+                    ul.asks-list.asks-list-5
                         li.asks-item
                             input(type='radio' name='ask')#ask-13
                             label(for='ask-13').asks-label
