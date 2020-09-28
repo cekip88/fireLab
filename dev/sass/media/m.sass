@@ -160,6 +160,8 @@ section
     line-height: 24px
     strong
       font-weight: 700
+    span
+      display: block
 
 .border
   width: calc(100% - 20px)
@@ -293,6 +295,8 @@ section
     bottom: -5px
     right: -25px
     opacity: .5
+  &-btn
+    -webkit-tap-highlight-color: transparent
 
 .shop
   padding: 10px 0 40px
@@ -322,26 +326,29 @@ section
 
 .client
   margin: 13px 0
+  section
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-arrow
+    -webkit-tap-highlight-color: transparent
   &-slider
-    width: calc(100% - 60px)
-    overflow: hidden
+    &-row
+      width: calc(100% - 60px)
     &-cont
       background-color: #fff
       box-shadow: 0 0 5px rgba($black,.5)
       section
         padding: 10px 15px
-  &-slider,section
-    display: flex
-    align-items: center
-    justify-content: space-between
   &-slide
-    flex: 0 0 30%
-    margin-right: 5%
-    img
-      width: 100%
+    div
+      +wh(100%, 70px)
+      +dfc
+      padding: 0 10px
   &-arrow
     padding: 5px
-    span
+    &:before
+      content: ''
       display: block
       border-top: 1px solid $red
       border-right: 1px solid $red

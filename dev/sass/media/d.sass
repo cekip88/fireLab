@@ -7,6 +7,23 @@ section
   section
     padding: 10px 50px 13px 95px
     justify-content: flex-start
+  &-logo,&-phone-link,&-mail-link,&-callback-tablet span,&-callback-tablet-img
+    transition: .35s ease
+  &-phone-link,&-mail-link
+    svg
+      transition: .35s ease
+    &:hover
+      color: $red
+      svg
+        fill: $red
+  &-callback-tablet:hover
+    .head-callback-tablet-img
+      transform: scale(1.15)
+    span
+      color: $red
+  &-logo
+    &:hover
+      transform: scale(1.15)
   &-conts
     font-size: 22px
     margin: 0 auto 0 87px
@@ -39,7 +56,14 @@ section
       margin-right: 15px
   &-btn
     font-size: 25px
-    padding: 13px 87px
+    padding: 12px 86px
+    transition: .35s ease
+    border: 1px solid transparent
+    &:hover
+      border-color: $red
+      background-color: transparent
+      color: $red
+
   &-tel
     font-size: 65px
     text-align: right
@@ -86,6 +110,11 @@ section
   margin-bottom: 55px
   &-text
     font-size: 31px
+    a
+      strong
+        transition: .35s ease
+        &:hover
+          text-decoration: underline
     &,&-big
       width: 100%
       margin-bottom: 75px
@@ -94,7 +123,20 @@ section
       margin-top: 75px
   &-btn,&-link
     font-size: 25px
-    padding: 15px 55px
+    padding: 14px 54px
+    border: 1px solid transparent
+    transition: .35s ease
+    &:hover
+      background-color: transparent
+  &-btn
+    &:hover
+      color: #fff
+      border-color: #fff
+  &-link
+    &:hover
+      border-color: $red
+      color: $red
+      box-shadow: none
   &-img
     height: 537px
     &-first
@@ -109,6 +151,10 @@ section
     width: 264px
     bottom: -110px
     right: -125px
+  &-btn
+    transition: .35s ease
+    &:hover
+      transform: scale(1.15)
 
 .shop
   padding: 40px 0 75px
@@ -126,14 +172,17 @@ section
       right: 50px
 .client
   margin-top: 38px
-  &-slider-cont
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-  &-slide
-    width: calc(20% - 40px)
+  &-slider
+    &-cont
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
   &-info
     width: 100%
     margin-top: 38px
     margin-bottom: 68px
+  &-slide
+    div
+      height: 170px
+      padding: 0
 
 .asks
   padding-bottom: 73px
@@ -153,9 +202,15 @@ section
     &-icon
       +wh(20px)
       flex: 0 0 20px
+    &:hover
+      cursor: pointer
   &-item
     &-text
       padding: 0 23px
+      a
+        transition: .35s ease
+        &:hover
+          text-decoration: underline
     input:checked~.asks-item-text
       padding: 28px 23px 23px
 
@@ -207,7 +262,14 @@ section
     &-item
       font-size: 18px
       margin-top: 22px
+      svg,span
+        transition: .35s ease
       svg
         width: 25px
+      &:hover
+        svg
+          fill: $red
+        span
+          color: $red
     &:after
       margin-top: 14px

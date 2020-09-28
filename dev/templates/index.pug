@@ -2,36 +2,37 @@ extends template/main
 append vars
   -
     page_title = 'Главная'
+      slick= true
 block content
     main
         .banner
             section
-                h1.main-title
+                h1.main-title.banner-q
                     span Лабораторные
                     span пожарные
                     span испытания
                 ul.banner-list
-                    li.banner-item
+                    li.banner-item.banner-q
                         include ../img/icons/red-mark.svg
                         span.banner-item-text Огнеупорность
-                    li.banner-item
+                    li.banner-item.banner-q
                         include ../img/icons/red-mark.svg
                         span.banner-item-text Изоляция
-                    li.banner-item
+                    li.banner-item.banner-q
                         include ../img/icons/red-mark.svg
                         span.banner-item-text Прочность
                 .banner-row
                     a(href='#').banner-btn
                         span Подробнее
-                    a(href='tel:+71234566778').banner-tel
-                        span +7 (123) 456-67-78
+                    a(href='tel:+77084250501').banner-tel
+                        span +7-708-425-05-01
                         include ../img/icons/phone-solid.svg
-        .calltoaction.border
+        .calltoaction.border.c-1
             section
                 p.calltoaction-text
-                    span Не прошли проверку пожарной безопасности или готовитесь к ней?
-                    span У нас вы можете заказать все обязательные виды испытаний
-                    span для #[strong выполнения и обеспечения] пожарной безопасности
+                    span.c-1c Не прошли проверку пожарной безопасности или готовитесь к ней?&nbsp;
+                    span.c-1c У нас вы можете заказать все обязательные виды испытаний&nbsp;
+                    span.c-1c для #[strong выполнения и обеспечения] пожарной безопасности
         .services
             section
                 .services-block
@@ -99,12 +100,12 @@ block content
                                     | наружной вертикальной пожарной лестницы
                                     | с ограждением свыше 6 метров
                                     | либо без ограждения
-        .calltoaction.border
+        .calltoaction.border.c-2
             section
                 p.calltoaction-text
-                    span По результатам испытаний образцов выдается протокол пожарных испытаний,
-                    span на основании которого орган по сертификации принимает решение
-                    span о выдаче пожарного сертификата.
+                    span.c-2c По результатам испытаний образцов выдается протокол пожарных испытаний,
+                    span.c-2c на основании которого орган по сертификации принимает решение
+                    span.c-2c о выдаче пожарного сертификата.
         .lab
             section
                 .lab-text
@@ -113,10 +114,10 @@ block content
                         span проводится в целях
                         span контроля за соблюдением
                     p
-                        a(href='#')
+                        a(href='http://adilet.zan.kz/rus/docs/P1400001077')
                             strong Правил Пожарной Безопасности
                         span согласно действующему законодательству
-                a(href='#').lab-btn Общие требования пожарной безопасности
+                a(href='http://adilet.zan.kz/rus/docs/P1400001077').lab-btn Общие требования пожарной безопасности
                 .lab-text-big
                     p
                         span Полный список тестов
@@ -127,12 +128,12 @@ block content
                 a(href='#').lab-link Связаться с лабораторией
                 +img('extingusher.png').lab-img.lab-img-first
                 +img('extingusher.png').lab-img.lab-img-last
-        .calltoaction.border
+        .calltoaction.border.c-3
             section
                 p.calltoaction-text
-                    span Мы являемся сертфицированной и аккредитованной лабораторией.
-                    span Доверьте испытания профессионалам.
-        .attestat
+                    span.c-3c Мы являемся сертфицированной и аккредитованной лабораторией.
+                    span.c-3c Доверьте испытания профессионалам.
+        .attestat#attestat
             section
                 .attestat-row
                     button.attestat-btn("data-click-action"="Modaler:showModal" "data-object"={"content":".att-1","append":false,"max-width":"90%","animation":"opacity-scale"})
@@ -143,15 +144,15 @@ block content
                         +img('../../img/att-3.jpg').att-3
                     +img('../../img/magnific-glass.png').attestat-glass
         .shop
-            .calltoaction.border
+            .calltoaction.border.c-4
                 section
                     p.calltoaction-text
-                        span Также у нас есть магазин и мы предоставляем
-                        span все необходимые товары по пожарной безопасности.
+                        span.c-4c Также у нас есть магазин и мы предоставляем
+                        span.c-4c все необходимые товары по пожарной безопасности.
             section
                 p.shop-text.calltoaction-text
                     span Щиты, пожарный инвентарь, огнетушители и многое другое
-                a(href='#').lab-link Открыть магазин
+                a(href='http://pbt.kz' target='_blank').lab-link Открыть магазин
                 +img('../../img/fire-axe.png').shop-img.shop-img-first
                 +img('../../img/fire-shield.png').shop-img.shop-img-last
         .calltoaction.border
@@ -161,21 +162,25 @@ block content
         .client
             .client-slider-cont
                 section
-                    button.client-arrow.client-arrow-left
-                        span
-                    .client-slider
-                        .client-slide
-                            +img('../../img/kegoc.png')
-                        .client-slide
-                            +img('../../img/EmcAgro.png')
-                        .client-slide
-                            +img('../../img/subaru.png')
-                        .client-slide
-                            +img('../../img/UniversityServiceManagement.png')
-                        .client-slide
-                            +img('../../img/BioOperations.png')
-                    button.client-arrow.client-arrow-right
-                        span
+                    button.client-arrow.client-arrow-left.slick-next.slick-arrow
+                    .client-slider-row
+                        .client-slider
+                            .client-slide
+                                div
+                                    +img('../../img/kegoc.png')
+                            .client-slide
+                                div
+                                    +img('../../img/EmcAgro.png')
+                            .client-slide
+                                div
+                                    +img('../../img/subaru.png')
+                            .client-slide
+                                div
+                                    +img('../../img/UniversityServiceManagement.png')
+                            .client-slide
+                                div
+                                    +img('../../img/BioOperations.png')
+                    button.client-arrow.client-arrow-right.slick-prev.slick-arrow
             p.client-info
                 span А также многие другие, компании не имеющие представительств в интернете, дошкольные и школьные образовательные учреждения,
                 span медицинские учреждения и организации культуры и искусства города Кокшетау, Нур-Султан, Акмолинской области и Северо-Казахстанской областей.
@@ -311,7 +316,7 @@ block content
                                     span +
                                     span -
                                 span Если я потерял или испортил протокол, что делать?
-                            p.asks-item-text На сайте #[a(href='#') pbt.kz] вы заходите в раздел проверка протокола, вводите БИН заказчика и скачиваете свой протокол
+                            p.asks-item-text На сайте #[a(href='http://pbt.kz' target='_blank') pbt.kz] вы заходите в раздел проверка протокола, вводите БИН заказчика и скачиваете свой протокол
                         li.asks-item
                             input(type='radio' name='ask')#ask-15
                             label(for='ask-15').asks-label
@@ -319,7 +324,7 @@ block content
                                     span +
                                     span -
                                 span Как узнать поддельный протокол или в действительности были проведены испытания и протокол выдан атестованной организацией?
-                            p.asks-item-text На сайте #[a(href='#') pbt.kz] вы заходите в раздел проверка протокола, вводите БИН заказчика и смотрите протокол
+                            p.asks-item-text На сайте #[a(href='http://pbt.kz' target='_blank') pbt.kz] вы заходите в раздел проверка протокола, вводите БИН заказчика и смотрите протокол
                         li.asks-item
                             input(type='radio' name='ask')#ask-16
                             label(for='ask-16').asks-label
@@ -327,7 +332,7 @@ block content
                                     span +
                                     span -
                                 span Где посмотреть можно Ваш аттестат и область аккредитации?
-                            p.asks-item-text На #[a(href='#') настоящем сайте], а также на сайте #[a(href='#') nca.kz] в разделе реестр субъектов аккредитации
+                            p.asks-item-text На #[a(href='#' class='asks-acc') настоящем сайте], а также на сайте #[a(href='http://nca.kz' target='_blank') nca.kz] в разделе реестр субъектов аккредитации
                         li.asks-item
                             input(type='radio' name='ask')#ask-17
                             label(for='ask-17').asks-label
@@ -335,5 +340,5 @@ block content
                                     span +
                                     span -
                                 span Какие дополнительные услуги Вы можете оказать?
-                            p.asks-item-text Мы оказываем очень широкий спектр услуг, с которым Вы можете ознакомиться на сайте #[a(href='#') pbt.kz]
+                            p.asks-item-text Мы оказываем очень широкий спектр услуг, с которым Вы можете ознакомиться на сайте #[a(href='http://pbt.kz' target='_blank') pbt.kz]
 

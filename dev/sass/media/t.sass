@@ -3,7 +3,7 @@ section
   +w($tablet#{$unit})
 
 .head
-  box-shadow: 0 10px 0 rgba($black,.55)
+  box-shadow: 0 5px 5px rgba($black,.55)
   section
     padding: 10px 30px
     height: auto
@@ -133,14 +133,17 @@ section
 
 
 .client
-  &-slide
-    flex: 0 0 auto
-    width: 18%
-    margin-right: 0
   &-info
     font-size: 15px
     span
       display: block
+  &-slider
+    &-cont
+      section
+        padding: 15px 20px
+  &-slide
+    div
+      height: 80px
 
 .asks
   section
